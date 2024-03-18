@@ -56,6 +56,12 @@ li a:hover:not(.active){
     font-size: 20px;
 }
 
+
+/*---------MAIN--------------*/
+.greeting p{
+    font-size: 33px;
+    color: #26323d;
+}
 .seccion-1{
     background-color: #c5bed0;
     font-family: "Jost", sans-serif;
