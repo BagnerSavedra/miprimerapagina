@@ -1,0 +1,334 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+  font-family: "Anta", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+    display: flex;
+    background-color: #00001f;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+
+}
+
+.active{
+    color: rgb(59, 165, 176);
+}
+
+.logo a{
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 30px 0 30px 40px;
+  
+}
+
+.logo a:hover{
+    color: aqua;
+    
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li a{
+  margin: 30px 0;
+}
+.menu li a{
+    font-size: 18px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    text-decoration: none;
+    
+}
+li a:hover:not(.active){
+  color: rgb(59, 165, 176);
+  font-size: 20px;
+}
+.checkbtn{
+    font-size: 25px;
+    color: rgb(255, 249, 249);
+    float: right;
+    line-height: 80px;
+    margin-right:40px ;
+    cursor: pointer;
+    display: none;  
+}
+
+
+
+
+/*------------------ESTILOS DE FORMULARIO--------------*/
+
+
+
+body{
+  
+  background-image: url(img/fondo.webp);
+  background-clip: unset;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+/*-----------------------ENCABEZADO CONTACTO---------------*/
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-hader{
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.form-header h1, p{
+     margin-top: 30px;
+     color: #ffffff;
+     text-shadow: 0 0 15px #70fdff;
+}
+
+
+
+
+
+/*-----------------FORMULARIO-----------------------*/
+
+.formulario{
+  background-image: url(img/zoro.gif);
+  background-size: 80%;
+  background-clip: inherit;
+  border: 3px solid #53d4ff;
+  border-radius: 3px;
+  box-shadow: 10px 15px 90px rgb(255, 0, 255);
+  width: 80%;
+  padding: 50px 0;
+  margin: 30px;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  color: #ffffff;
+  text-shadow: 15px 0 15px #70fdff;
+  font-weight: 500;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"] {
+  background-color: #fffefe;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+.form-row input[type="email"]{
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+.form-row textarea {
+font-family: "Helvetica", "Arial", sans-serif;
+font-size: 14px;
+
+
+background-color: #ffffff;
+border: 0;
+border-radius: 6px;
+
+
+min-height: 200px;
+margin-bottom: 10px;
+padding: 7px;
+resize: none;
+width: 100%;
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+
+  color: #ffffff;
+  background-color: #5995da;
+
+
+  border: none;
+  border-radius: 3px;
+
+  
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+ /*---RESPONSIVE DE FORMULARIO GRANDE*/  
+@media only screen and (min-width: 700px) {
+  .form-header {
+    padding: 50px;
+    
+  }
+
+
+.form-header h1, p {
+  padding-left: 105px;
+}
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row input[type="email"]{
+      width: 250px;
+      height: initial;
+  }
+
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+  .form-row textarea {
+      width: 250px;
+    }
+    .form-row button {
+      margin-left: 120px; 
+      width: 250px;
+    }
+}
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row input[type="email"]{
+        width: 250px;
+        height: initial;
+    }
+
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+    .form-row textarea {
+        width: 250px;
+      }
+      .form-row button {
+        margin-left: 120px; 
+        width: 250px;
+      }
+  
+
+/*-----------------RESPONSIVE DE NAVBAR----------*/
+  
+
+
+@media(max-width:768px){
+   
+    /*ENCABEZADO-HEADER*/
+    header {
+        background-color: #00001f;
+      }
+    
+      .checkbtn {
+        display: block;
+      }
+    
+      .navbar {
+        height: 0vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-image: url(img/satoru.jpg);
+        text-align: center;
+        transition: all 0.5s;
+        overflow: hidden;
+      }
+    
+      .navbar ul.menu {
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+      
+      }
+    
+      .navbar ul.menu li a:hover {
+        color: #b59a61;
+      }
+
+      .navbar ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+    
+      .navbar ul li a{
+        font-size: 20px;
+      }
+      /* ACTIVE */
+      .navbar.active {
+        height: 100vh;
+      }
+    
+      .navbar.active ul.menu {
+        opacity: 1;
+      }
+    }

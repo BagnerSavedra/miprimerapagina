@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    font-family: "Anta", sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    display: flex;
+    background-color: #201f23;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+
+}
+
+.active{
+    color: rgb(59, 165, 176);
+}
+
+
+.logo a{
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.logo a:hover{
+    color: aqua;
+    
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li{
+    margin: 30px 0;
+}
+.menu li a{
+    font-size: 18px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    text-decoration: none;
+    
+}
+
+li a:hover:not(.active){
+    color: rgb(59, 165, 176);
+    font-size: 20px;
+}
+
+.seccion-1{
+    background-color: #c5bed0;
+    font-family: "Jost", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3em;
+}
+
+.acerca-de p{
+    margin: 10px 30px 0 0;
+
+}
+
+.acerca-imagen img{
+   margin-top: 30px;
+    width:150px;
+    display: flex;
+    border-radius: 15px;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px; 
+    transition: 0.6s;
+}
+
+.acerca-imagen img:hover{
+   filter: invert(900%) ;
+   border-radius: 15px;
+   border-top-right-radius: 150px;
+   border-bottom-right-radius: 150px; 
+   cursor: not-allowed;
+   margin-left: 150px;
+   
+}
+
+
+/*------GALERIA DE IMAGENES-------*/
+.seccion-2 {
+    display: flex;
+    width: 100%;
+    height: 630px;   
+    
+}
+.seccion-2 img{
+    
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 0.5s ease;
+}
+
+.seccion-2 img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+/*--------------------------------------*/
+
+
+
+
+.contenedor-3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center; 
+    background-color: #c5bed0;
+    font-family: "Jost", sans-serif;
+}
+
+.contenedor-2 h3{
+   color: rgb(144, 113, 21);
+   padding: 20px 0 0 150px;
+    font-size: 1.4em;
+    background-color: #c5bed0;
+    font-family: "Jost", sans-serif;
+}
+
+.contenedor-3 img{
+      width: 300px;
+      height:150px ;
+      border-radius:20px;   
+      margin: 30px 0;  
+}
+
+.contenedor-3 img:hover{
+   transform: scale(1.10);
+    transition: 0.5s;
+}
+
+.contenedor-3 h3, p {
+    width: 300px;
+}
+
+.caja-1, .caja-2, .caja-3{
+    margin:0 70px 20px 70px;
+
+}
+
+.contenedor-3 a{
+   text-decoration: none;
+   color: rgb(144, 113, 21);
+   font-family: "Open Sans", sans-serif ;
+}
+
+footer{
+    font-family: "Open Sans", sans-serif ;
+    font-weight: 650;
+    background-color: #201f23;
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    
+}
+
+.redes ul{
+    display: flex;
+}
+
+.iconos li{
+    list-style-type: none;
+}
+.iconos li a{
+    font-size: 18px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    text-decoration: none;
+    
+    
+    
+}
+.contenido nav ul li a{
+   padding: 40px;
+   
+}
+.iconos li a i{
+    font-size: 30px;
+ }
+
+.iconos li a i:hover{
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+
+.checkbtn{
+    font-size: 25px;
+    color: rgb(255, 249, 249);
+    float: right;
+    line-height: 80px;
+    margin-right:40px ;
+    cursor: pointer;
+    display: none;  
+}
+
+@media(max-width:768px){
+    .menu{
+        display: none;
+       }
+
+
+@media(max-width:768px){
+   
+    /*ENCABEZADO-HEADER*/
+    header {
+        background-color: #201f23;
+    }
+    
+      .checkbtn {
+        display: block;
+      }
+    
+      .navbar {
+        height: 0vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #26323d;
+        text-align: center;
+        transition: all 0.5s;
+        overflow: hidden;
+        z-index: 100;
+      }
+    
+      .navbar ul.menu {
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+      }
+    
+      .navbar ul.menu li a:hover {
+        color: #b59a61;
+      }
+
+      .navbar ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+    
+      .navbar ul li a{
+        font-size: 20px;
+      }
+      /* ACTIVE */
+      .navbar.active {
+        height: 100vh;
+      }
+    
+      .navbar.active ul.menu {
+        opacity: 1;
+      }
+    }
+    
+   
+   /*FOOTERR*/
+    footer{
+        font-size: 0.7em;
+        font-weight: 500;
+        display: flex;
+       
+    }
+
+    .contenido nav ul  {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .link{
+        color: green;
+        font-size: 2em;
+        position: fixed;
+        bottom: 35px;
+        right:100px ;
+        
+    }
+}
